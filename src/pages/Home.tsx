@@ -82,8 +82,8 @@ export default function Home() {
   const calculate = () => {
     // 验证输入
     const salaryNum = parseFloat(salary);
-    if (isNaN(salaryNum) || salaryNum <= 0 || salaryNum > 100000) {
-      setError('请输入有效的月薪（0-100000）');
+    if (isNaN(salaryNum) || salaryNum <= 0 || salaryNum > 1000000) {
+      setError('请输入有效的月薪（0-1000000）');
       return;
     }
 
